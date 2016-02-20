@@ -1,0 +1,7 @@
+app/code/community/Unfraud/Unfraud/								app/code/community/Unfraud/Unfraud/
+app/design/frontend/base/default/layout/unfraud.xml             app/design/frontend/base/default/layout/unfraud.xml
+app/design/frontend/base/default/template/unfraud/              app/design/frontend/base/default/template/unfraud/
+app/etc/modules/Unfraud_Unfraud.xml								app/etc/modules/Unfraud_Unfraud.xml
+app/locale/en_US/Unfraud_Unfraud.csv							app/locale/en_US/Unfraud_Unfraud.csv
+app/locale/it_IT/Unfraud_Unfraud.csv							app/locale/it_IT/Unfraud_Unfraud.csv
+app/design/frontend/base/default/layout/unfraud.xml             app/design/frontend/base/default/layout/unfraud.xml

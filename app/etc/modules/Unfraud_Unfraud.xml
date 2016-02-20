@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Unfraud_Unfraud>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Unfraud_Unfraud>
+    </modules>
+</config>

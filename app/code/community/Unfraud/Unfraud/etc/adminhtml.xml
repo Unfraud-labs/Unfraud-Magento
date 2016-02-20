@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <unfraud translate="title" module="unfraud">
+            <title>Unfraud.com</title>
+            <sort_order>9999</sort_order>
+            <action>adminhtml/unfraud_dashboard/index</action>
+        </unfraud>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <unfraud translate="label" module="unfraud">
+                        <title>Unfraud Menu</title>
+                        <sort_order>100</sort_order>
+                    </unfraud>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <unfraud_section translate="title" module="unfraud">
+                                        <title>Settings</title>
+                                        <sort_order>100</sort_order>
+                                    </unfraud_section>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+    <translate>
+        <modules>
+            <Unfraud_Unfraud>
+                <files>
+                    <default>Unfraud_Unfraud.csv</default>
+                </files>
+            </Unfraud_Unfraud>
+        </modules>
+    </translate>
+</config>

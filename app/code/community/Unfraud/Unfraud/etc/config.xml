@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    Unfraud
+ * @package     Unfraud_Unfraud
+ */
+-->
+<config>
+    <modules>
+        <Unfraud_Unfraud>
+            <version>1.0.0</version>
+        </Unfraud_Unfraud>
+    </modules>
+    <global>
+        <blocks>
+            <unfraud>
+                <class>Unfraud_Unfraud_Block</class>
+            </unfraud>
+        </blocks>
+        <helpers>
+            <unfraud>
+                <class>Unfraud_Unfraud_Helper</class>
+            </unfraud>
+        </helpers>
+        <models>
+            <unfraud>
+                <class>Unfraud_Unfraud_Model</class>
+            </unfraud>
+        </models>        
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <unfraud_export_order>
+                        <class>Unfraud_Unfraud_Model_Observer</class>
+                        <method>exportOrder</method>
+                    </unfraud_export_order>
+                </observers>
+            </sales_order_place_after>
+        </events>       
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <unfraud before="Mage_Adminhtml">Unfraud_Unfraud_Adminhtml</unfraud>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+    <frontend>
+        <layout>
+            <updates>
+                <unfraud module="unfraud">
+                    <file>unfraud.xml</file>
+                </unfraud>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <unfraud_section>
+            <unfraud_group>
+                <threshold_field>100</threshold_field>
+            </unfraud_group>
+        </unfraud_section>
+    </default>
+</config>

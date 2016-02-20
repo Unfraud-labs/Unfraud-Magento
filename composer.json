@@ -1,0 +1,11 @@
+{
+  "name": "unfraud/unfraud_magento",
+  "description": "Unfraud Magento Module",
+  "license": "GPL-3.0",
+  "type": "magento-module",
+  "homepage": "https://github.com/Unfraud/Unfraud_Magento",
+  "require": {
+    "php": ">=5.3",
+    "magento-hackathon/magento-composer-installer": "*"
+  }
+}
