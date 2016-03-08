@@ -19,7 +19,7 @@ class Unfraud_Unfraud_Model_Abstract extends Mage_Core_Model_Abstract
     const DASHBOARD_URL = 'https://www.unfraud.com/dashboard/';
     const LOGIN_URL = 'https://unfraud.com/api/helpers/login.php';
     const LOGIN_API_URL = "https://unfraud.com/api/v1.1/index.php/user/?login=true";
-    const BEA_URL = '//www.unfraud.com/bea/bea.js';
+    const BEA_URL = '//bea.unfraud.com/bea.js';
 
     const SUCCESS_API_RESPONSE = 1;
     const SAFE_API_RESPONSE = "safe";
